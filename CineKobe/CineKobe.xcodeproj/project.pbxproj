@@ -18,7 +18,25 @@
 		3EBE67B02170D46C00DB2709 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67AF2170D46C00DB2709 /* Service.swift */; };
 		3EBE67B22170D48200DB2709 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67B12170D48200DB2709 /* APIResponse.swift */; };
 		3EBE67B52170D6D900DB2709 /* MoviesUpcoming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67B42170D6D900DB2709 /* MoviesUpcoming.swift */; };
+		3EBE67BD2171243B00DB2709 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67BC2171243B00DB2709 /* AppCoordinator.swift */; };
+		3EBE67C1217124E500DB2709 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67C0217124E500DB2709 /* Router.swift */; };
+		3EBE67C3217125B700DB2709 /* RouterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67C2217125B700DB2709 /* RouterImp.swift */; };
+		3EBE67C5217126BA00DB2709 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67C4217126BA00DB2709 /* Presentable.swift */; };
+		3EBE67C92171278100DB2709 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67C82171278100DB2709 /* BaseCoordinator.swift */; };
+		3EBE67CB217127A500DB2709 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67CA217127A500DB2709 /* Coordinator.swift */; };
+		3EBE67CF217131FE00DB2709 /* CoordinatorFactoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67CE217131FE00DB2709 /* CoordinatorFactoryImp.swift */; };
+		3EBE67D12171321D00DB2709 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67D02171321D00DB2709 /* CoordinatorFactory.swift */; };
+		3EBE67D32171328E00DB2709 /* MoviesUpcomingFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67D22171328E00DB2709 /* MoviesUpcomingFactory.swift */; };
+		3EBE67DC2171338500DB2709 /* MoviesUpcoming.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3EBE67D52171338500DB2709 /* MoviesUpcoming.strings */; };
+		3EBE67DD2171338500DB2709 /* MoviesUpcomingViewController_SE.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EBE67D62171338500DB2709 /* MoviesUpcomingViewController_SE.xib */; };
+		3EBE67DE2171338500DB2709 /* MoviesUpcomingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67D72171338500DB2709 /* MoviesUpcomingPresenter.swift */; };
+		3EBE67E02171338500DB2709 /* MoviesUpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67D92171338500DB2709 /* MoviesUpcomingViewController.swift */; };
+		3EBE67E22171338500DB2709 /* MoviesUpcomingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EBE67DB2171338500DB2709 /* MoviesUpcomingViewController.xib */; };
+		3EBE67E32171349600DB2709 /* MoviesUpcomingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67D82171338500DB2709 /* MoviesUpcomingTests.swift */; };
+		3EBE67E52171352100DB2709 /* ModuloFactoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67E42171352100DB2709 /* ModuloFactoryImp.swift */; };
+		3EBE67E721713A6000DB2709 /* MoviesUpcomingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67E621713A6000DB2709 /* MoviesUpcomingCoordinator.swift */; };
 		992A140B76E80771CED98D70 /* libPods-CineKobe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20EE9AFC33643EFF22FDD482 /* libPods-CineKobe.a */; };
+		B9E674305ABBA6FB734B987B /* libPods-CineKobeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 919FBD1CC92C67BD1CB43AD5 /* libPods-CineKobeTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		20EE9AFC33643EFF22FDD482 /* libPods-CineKobe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CineKobe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28D5A53F6ABBB738DAB5048C /* Pods-CineKobeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineKobeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CineKobeTests/Pods-CineKobeTests.release.xcconfig"; sourceTree = "<group>"; };
 		3EBE67862170C28100DB2709 /* CineKobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CineKobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EBE67892170C28100DB2709 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EBE678B2170C28100DB2709 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,8 +67,27 @@
 		3EBE67AF2170D46C00DB2709 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		3EBE67B12170D48200DB2709 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		3EBE67B42170D6D900DB2709 /* MoviesUpcoming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUpcoming.swift; sourceTree = "<group>"; };
+		3EBE67BC2171243B00DB2709 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		3EBE67C0217124E500DB2709 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		3EBE67C2217125B700DB2709 /* RouterImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterImp.swift; sourceTree = "<group>"; };
+		3EBE67C4217126BA00DB2709 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		3EBE67C82171278100DB2709 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		3EBE67CA217127A500DB2709 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		3EBE67CE217131FE00DB2709 /* CoordinatorFactoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryImp.swift; sourceTree = "<group>"; };
+		3EBE67D02171321D00DB2709 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		3EBE67D22171328E00DB2709 /* MoviesUpcomingFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUpcomingFactory.swift; sourceTree = "<group>"; };
+		3EBE67D52171338500DB2709 /* MoviesUpcoming.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = MoviesUpcoming.strings; sourceTree = "<group>"; };
+		3EBE67D62171338500DB2709 /* MoviesUpcomingViewController_SE.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviesUpcomingViewController_SE.xib; sourceTree = "<group>"; };
+		3EBE67D72171338500DB2709 /* MoviesUpcomingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUpcomingPresenter.swift; sourceTree = "<group>"; };
+		3EBE67D82171338500DB2709 /* MoviesUpcomingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUpcomingTests.swift; sourceTree = "<group>"; };
+		3EBE67D92171338500DB2709 /* MoviesUpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUpcomingViewController.swift; sourceTree = "<group>"; };
+		3EBE67DB2171338500DB2709 /* MoviesUpcomingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviesUpcomingViewController.xib; sourceTree = "<group>"; };
+		3EBE67E42171352100DB2709 /* ModuloFactoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuloFactoryImp.swift; sourceTree = "<group>"; };
+		3EBE67E621713A6000DB2709 /* MoviesUpcomingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUpcomingCoordinator.swift; sourceTree = "<group>"; };
 		49B2DC1C7B267750FFB58A96 /* Pods-CineKobe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineKobe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CineKobe/Pods-CineKobe.debug.xcconfig"; sourceTree = "<group>"; };
 		68E5AD9B0A3AF1B82104382B /* Pods-CineKobe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineKobe.release.xcconfig"; path = "Pods/Target Support Files/Pods-CineKobe/Pods-CineKobe.release.xcconfig"; sourceTree = "<group>"; };
+		919FBD1CC92C67BD1CB43AD5 /* libPods-CineKobeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CineKobeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7EE58DF9AB8656BBAE3B677 /* Pods-CineKobeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineKobeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CineKobeTests/Pods-CineKobeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9E674305ABBA6FB734B987B /* libPods-CineKobeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +115,8 @@
 			children = (
 				49B2DC1C7B267750FFB58A96 /* Pods-CineKobe.debug.xcconfig */,
 				68E5AD9B0A3AF1B82104382B /* Pods-CineKobe.release.xcconfig */,
+				C7EE58DF9AB8656BBAE3B677 /* Pods-CineKobeTests.debug.xcconfig */,
+				28D5A53F6ABBB738DAB5048C /* Pods-CineKobeTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -103,10 +144,15 @@
 		3EBE67882170C28100DB2709 /* CineKobe */ = {
 			isa = PBXGroup;
 			children = (
+				3EBE67BB217123FB00DB2709 /* AppDelegate */,
 				3EBE67A92170C8C500DB2709 /* API */,
+				3EBE67BF217124D200DB2709 /* Router */,
 				3EBE67AA2170C8DE00DB2709 /* Model */,
 				3EBE67B32170D49D00DB2709 /* Service */,
+				3EBE67BE2171246A00DB2709 /* Protocol */,
 				3EBE67BA21711B2600DB2709 /* Features */,
+				3EBE67CC217131C100DB2709 /* Factories */,
+				3EBE67C62171273C00DB2709 /* Coordinators */,
 				3EBE67B921711AD300DB2709 /* General */,
 			);
 			path = CineKobe;
@@ -150,7 +196,6 @@
 		3EBE67B921711AD300DB2709 /* General */ = {
 			isa = PBXGroup;
 			children = (
-				3EBE67892170C28100DB2709 /* AppDelegate.swift */,
 				3EBE678D2170C28100DB2709 /* Main.storyboard */,
 				3EBE67902170C28200DB2709 /* Assets.xcassets */,
 				3EBE67922170C28200DB2709 /* LaunchScreen.storyboard */,
@@ -162,15 +207,93 @@
 		3EBE67BA21711B2600DB2709 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				3EBE67D42171332D00DB2709 /* MoviesUpcoming */,
 				3EBE678B2170C28100DB2709 /* ViewController.swift */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		3EBE67BB217123FB00DB2709 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3EBE67892170C28100DB2709 /* AppDelegate.swift */,
+				3EBE67BC2171243B00DB2709 /* AppCoordinator.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		3EBE67BE2171246A00DB2709 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				3EBE67C4217126BA00DB2709 /* Presentable.swift */,
+				3EBE67CA217127A500DB2709 /* Coordinator.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		3EBE67BF217124D200DB2709 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3EBE67C0217124E500DB2709 /* Router.swift */,
+				3EBE67C2217125B700DB2709 /* RouterImp.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3EBE67C62171273C00DB2709 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				3EBE67C72171276500DB2709 /* BaseCoordinator */,
+				3EBE67E621713A6000DB2709 /* MoviesUpcomingCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		3EBE67C72171276500DB2709 /* BaseCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				3EBE67C82171278100DB2709 /* BaseCoordinator.swift */,
+			);
+			path = BaseCoordinator;
+			sourceTree = "<group>";
+		};
+		3EBE67CC217131C100DB2709 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				3EBE67CD217131DD00DB2709 /* FactoryImp */,
+				3EBE67D02171321D00DB2709 /* CoordinatorFactory.swift */,
+				3EBE67D22171328E00DB2709 /* MoviesUpcomingFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		3EBE67CD217131DD00DB2709 /* FactoryImp */ = {
+			isa = PBXGroup;
+			children = (
+				3EBE67CE217131FE00DB2709 /* CoordinatorFactoryImp.swift */,
+				3EBE67E42171352100DB2709 /* ModuloFactoryImp.swift */,
+			);
+			path = FactoryImp;
+			sourceTree = "<group>";
+		};
+		3EBE67D42171332D00DB2709 /* MoviesUpcoming */ = {
+			isa = PBXGroup;
+			children = (
+				3EBE67D52171338500DB2709 /* MoviesUpcoming.strings */,
+				3EBE67D82171338500DB2709 /* MoviesUpcomingTests.swift */,
+				3EBE67D72171338500DB2709 /* MoviesUpcomingPresenter.swift */,
+				3EBE67D92171338500DB2709 /* MoviesUpcomingViewController.swift */,
+				3EBE67DB2171338500DB2709 /* MoviesUpcomingViewController.xib */,
+				3EBE67D62171338500DB2709 /* MoviesUpcomingViewController_SE.xib */,
+			);
+			path = MoviesUpcoming;
 			sourceTree = "<group>";
 		};
 		83CF8EF9B908A0D9EE0D52D5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				20EE9AFC33643EFF22FDD482 /* libPods-CineKobe.a */,
+				919FBD1CC92C67BD1CB43AD5 /* libPods-CineKobeTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -200,6 +323,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3EBE67A62170C28200DB2709 /* Build configuration list for PBXNativeTarget "CineKobeTests" */;
 			buildPhases = (
+				8D9311870B71C414DE5B1AC9 /* [CP] Check Pods Manifest.lock */,
 				3EBE67962170C28200DB2709 /* Sources */,
 				3EBE67972170C28200DB2709 /* Frameworks */,
 				3EBE67982170C28200DB2709 /* Resources */,
@@ -259,7 +383,10 @@
 			files = (
 				3EBE67942170C28200DB2709 /* LaunchScreen.storyboard in Resources */,
 				3EBE67912170C28200DB2709 /* Assets.xcassets in Resources */,
+				3EBE67DD2171338500DB2709 /* MoviesUpcomingViewController_SE.xib in Resources */,
 				3EBE678F2170C28100DB2709 /* Main.storyboard in Resources */,
+				3EBE67E22171338500DB2709 /* MoviesUpcomingViewController.xib in Resources */,
+				3EBE67DC2171338500DB2709 /* MoviesUpcoming.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +400,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		8D9311870B71C414DE5B1AC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CineKobeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		ED604BAB97F5C36EDC392CF2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -302,13 +451,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EBE67E52171352100DB2709 /* ModuloFactoryImp.swift in Sources */,
 				3EBE678C2170C28100DB2709 /* ViewController.swift in Sources */,
 				3EBE67AE2170D40500DB2709 /* DataManager.swift in Sources */,
+				3EBE67CB217127A500DB2709 /* Coordinator.swift in Sources */,
+				3EBE67D32171328E00DB2709 /* MoviesUpcomingFactory.swift in Sources */,
 				3EBE67B02170D46C00DB2709 /* Service.swift in Sources */,
+				3EBE67DE2171338500DB2709 /* MoviesUpcomingPresenter.swift in Sources */,
+				3EBE67CF217131FE00DB2709 /* CoordinatorFactoryImp.swift in Sources */,
+				3EBE67C3217125B700DB2709 /* RouterImp.swift in Sources */,
 				3EBE67B52170D6D900DB2709 /* MoviesUpcoming.swift in Sources */,
+				3EBE67C1217124E500DB2709 /* Router.swift in Sources */,
+				3EBE67BD2171243B00DB2709 /* AppCoordinator.swift in Sources */,
+				3EBE67D12171321D00DB2709 /* CoordinatorFactory.swift in Sources */,
+				3EBE67C92171278100DB2709 /* BaseCoordinator.swift in Sources */,
 				3EBE67AC2170CE1200DB2709 /* API.swift in Sources */,
 				3EBE678A2170C28100DB2709 /* AppDelegate.swift in Sources */,
+				3EBE67C5217126BA00DB2709 /* Presentable.swift in Sources */,
+				3EBE67E02171338500DB2709 /* MoviesUpcomingViewController.swift in Sources */,
 				3EBE67B22170D48200DB2709 /* APIResponse.swift in Sources */,
+				3EBE67E721713A6000DB2709 /* MoviesUpcomingCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +478,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EBE67E32171349600DB2709 /* MoviesUpcomingTests.swift in Sources */,
 				3EBE679F2170C28200DB2709 /* CineKobeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,6 +667,7 @@
 		};
 		3EBE67A72170C28200DB2709 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7EE58DF9AB8656BBAE3B677 /* Pods-CineKobeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -524,6 +688,7 @@
 		};
 		3EBE67A82170C28200DB2709 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28D5A53F6ABBB738DAB5048C /* Pods-CineKobeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
