@@ -7,12 +7,16 @@ PODS:
     - Result (~> 3.0)
   - Nimble (7.0.3)
   - Quick (1.0.0)
+  - R.swift (3.3.0):
+    - R.swift.Library (~> 3.0.2)
+  - R.swift.Library (3.0.2)
   - Result (3.2.4)
 
 DEPENDENCIES:
   - Moya (~> 11.0)
   - Nimble (~> 7.0.1)
   - Quick (~> 1.0.0)
+  - R.swift (~> 3.3.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -20,6 +24,8 @@ SPEC REPOS:
     - Moya
     - Nimble
     - Quick
+    - R.swift
+    - R.swift.Library
     - Result
 
 SPEC CHECKSUMS:
@@ -27,8 +33,10 @@ SPEC CHECKSUMS:
   Moya: a725035953bc1c0eb1be505ab903984501d82440
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
+  R.swift: bde9704d50ff36820f49e266bc88ef545e1e9b36
+  R.swift.Library: fbdec16c9802ad104fc1ba53415dc190e6ec5c73
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
 
-PODFILE CHECKSUM: 21f0c904f44e765f565b83bd1432bdb45756fb1d
+PODFILE CHECKSUM: 34b0043a6c1e2b252b4534fdfa6fca762c3c09df
 
 COCOAPODS: 1.5.3

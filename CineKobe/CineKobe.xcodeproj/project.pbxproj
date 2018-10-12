@@ -35,8 +35,12 @@
 		3EBE67E32171349600DB2709 /* MoviesUpcomingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67D82171338500DB2709 /* MoviesUpcomingTests.swift */; };
 		3EBE67E52171352100DB2709 /* ModuloFactoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67E42171352100DB2709 /* ModuloFactoryImp.swift */; };
 		3EBE67E721713A6000DB2709 /* MoviesUpcomingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67E621713A6000DB2709 /* MoviesUpcomingCoordinator.swift */; };
-		992A140B76E80771CED98D70 /* libPods-CineKobe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20EE9AFC33643EFF22FDD482 /* libPods-CineKobe.a */; };
+		3EBE67EB21715E8F00DB2709 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67EA21715E8F00DB2709 /* R.generated.swift */; };
+		3EBE67EE2171607200DB2709 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67ED2171607200DB2709 /* ViewControllerExtension.swift */; };
+		3EBE67F02171615800DB2709 /* UIScreenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67EF2171615800DB2709 /* UIScreenExtension.swift */; };
+		82C794D71A8678825FBDCA5B /* Pods_CineKobe_CineKobeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC47CE2F23FD14EF36D94E14 /* Pods_CineKobe_CineKobeTests.framework */; };
 		B9E674305ABBA6FB734B987B /* libPods-CineKobeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 919FBD1CC92C67BD1CB43AD5 /* libPods-CineKobeTests.a */; };
+		E28AE06BB3F303000AB157C6 /* Pods_CineKobe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99AD883804300C45920D156B /* Pods_CineKobe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +54,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		20EE9AFC33643EFF22FDD482 /* libPods-CineKobe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CineKobe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28D5A53F6ABBB738DAB5048C /* Pods-CineKobeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineKobeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CineKobeTests/Pods-CineKobeTests.release.xcconfig"; sourceTree = "<group>"; };
 		3EBE67862170C28100DB2709 /* CineKobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CineKobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EBE67892170C28100DB2709 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,10 +87,17 @@
 		3EBE67DB2171338500DB2709 /* MoviesUpcomingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviesUpcomingViewController.xib; sourceTree = "<group>"; };
 		3EBE67E42171352100DB2709 /* ModuloFactoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuloFactoryImp.swift; sourceTree = "<group>"; };
 		3EBE67E621713A6000DB2709 /* MoviesUpcomingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUpcomingCoordinator.swift; sourceTree = "<group>"; };
+		3EBE67EA21715E8F00DB2709 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = CineKobe/General/R.generated.swift; sourceTree = SOURCE_ROOT; };
+		3EBE67ED2171607200DB2709 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		3EBE67EF2171615800DB2709 /* UIScreenExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreenExtension.swift; sourceTree = "<group>"; };
 		49B2DC1C7B267750FFB58A96 /* Pods-CineKobe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineKobe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CineKobe/Pods-CineKobe.debug.xcconfig"; sourceTree = "<group>"; };
+		50C5C042E3B68A2B1EFDE7E1 /* Pods-CineKobe-CineKobeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineKobe-CineKobeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CineKobe-CineKobeTests/Pods-CineKobe-CineKobeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		68E5AD9B0A3AF1B82104382B /* Pods-CineKobe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineKobe.release.xcconfig"; path = "Pods/Target Support Files/Pods-CineKobe/Pods-CineKobe.release.xcconfig"; sourceTree = "<group>"; };
+		6C5EA585352E52258FD3A23B /* Pods-CineKobe-CineKobeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineKobe-CineKobeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CineKobe-CineKobeTests/Pods-CineKobe-CineKobeTests.release.xcconfig"; sourceTree = "<group>"; };
 		919FBD1CC92C67BD1CB43AD5 /* libPods-CineKobeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CineKobeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99AD883804300C45920D156B /* Pods_CineKobe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CineKobe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EE58DF9AB8656BBAE3B677 /* Pods-CineKobeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineKobeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CineKobeTests/Pods-CineKobeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FC47CE2F23FD14EF36D94E14 /* Pods_CineKobe_CineKobeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CineKobe_CineKobeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				992A140B76E80771CED98D70 /* libPods-CineKobe.a in Frameworks */,
+				E28AE06BB3F303000AB157C6 /* Pods_CineKobe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +114,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9E674305ABBA6FB734B987B /* libPods-CineKobeTests.a in Frameworks */,
+				82C794D71A8678825FBDCA5B /* Pods_CineKobe_CineKobeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +128,8 @@
 				68E5AD9B0A3AF1B82104382B /* Pods-CineKobe.release.xcconfig */,
 				C7EE58DF9AB8656BBAE3B677 /* Pods-CineKobeTests.debug.xcconfig */,
 				28D5A53F6ABBB738DAB5048C /* Pods-CineKobeTests.release.xcconfig */,
+				50C5C042E3B68A2B1EFDE7E1 /* Pods-CineKobe-CineKobeTests.debug.xcconfig */,
+				6C5EA585352E52258FD3A23B /* Pods-CineKobe-CineKobeTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -154,6 +167,7 @@
 				3EBE67CC217131C100DB2709 /* Factories */,
 				3EBE67C62171273C00DB2709 /* Coordinators */,
 				3EBE67B921711AD300DB2709 /* General */,
+				3EBE67EC2171603800DB2709 /* Extensions */,
 			);
 			path = CineKobe;
 			sourceTree = "<group>";
@@ -196,6 +210,7 @@
 		3EBE67B921711AD300DB2709 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				3EBE67EA21715E8F00DB2709 /* R.generated.swift */,
 				3EBE678D2170C28100DB2709 /* Main.storyboard */,
 				3EBE67902170C28200DB2709 /* Assets.xcassets */,
 				3EBE67922170C28200DB2709 /* LaunchScreen.storyboard */,
@@ -289,11 +304,21 @@
 			path = MoviesUpcoming;
 			sourceTree = "<group>";
 		};
+		3EBE67EC2171603800DB2709 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3EBE67ED2171607200DB2709 /* ViewControllerExtension.swift */,
+				3EBE67EF2171615800DB2709 /* UIScreenExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		83CF8EF9B908A0D9EE0D52D5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				20EE9AFC33643EFF22FDD482 /* libPods-CineKobe.a */,
 				919FBD1CC92C67BD1CB43AD5 /* libPods-CineKobeTests.a */,
+				99AD883804300C45920D156B /* Pods_CineKobe.framework */,
+				FC47CE2F23FD14EF36D94E14 /* Pods_CineKobe_CineKobeTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -306,9 +331,11 @@
 			buildConfigurationList = 3EBE67A32170C28200DB2709 /* Build configuration list for PBXNativeTarget "CineKobe" */;
 			buildPhases = (
 				ED604BAB97F5C36EDC392CF2 /* [CP] Check Pods Manifest.lock */,
+				3EBE67E92171564E00DB2709 /* Rswift */,
 				3EBE67822170C28100DB2709 /* Sources */,
 				3EBE67832170C28100DB2709 /* Frameworks */,
 				3EBE67842170C28100DB2709 /* Resources */,
+				C6F05526317F681C0792234F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -327,6 +354,7 @@
 				3EBE67962170C28200DB2709 /* Sources */,
 				3EBE67972170C28200DB2709 /* Frameworks */,
 				3EBE67982170C28200DB2709 /* Resources */,
+				99C5EA9AC17C8D40B28BA0FB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -400,6 +428,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3EBE67E92171564E00DB2709 /* Rswift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Rswift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT\"\n";
+		};
 		8D9311870B71C414DE5B1AC9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -415,11 +461,71 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CineKobeTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CineKobe-CineKobeTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99C5EA9AC17C8D40B28BA0FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CineKobe-CineKobeTests/Pods-CineKobe-CineKobeTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CineKobe-CineKobeTests/Pods-CineKobe-CineKobeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6F05526317F681C0792234F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CineKobe/Pods-CineKobe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CineKobe/Pods-CineKobe-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ED604BAB97F5C36EDC392CF2 /* [CP] Check Pods Manifest.lock */ = {
@@ -459,6 +565,7 @@
 				3EBE67B02170D46C00DB2709 /* Service.swift in Sources */,
 				3EBE67DE2171338500DB2709 /* MoviesUpcomingPresenter.swift in Sources */,
 				3EBE67CF217131FE00DB2709 /* CoordinatorFactoryImp.swift in Sources */,
+				3EBE67EB21715E8F00DB2709 /* R.generated.swift in Sources */,
 				3EBE67C3217125B700DB2709 /* RouterImp.swift in Sources */,
 				3EBE67B52170D6D900DB2709 /* MoviesUpcoming.swift in Sources */,
 				3EBE67C1217124E500DB2709 /* Router.swift in Sources */,
@@ -468,7 +575,9 @@
 				3EBE67AC2170CE1200DB2709 /* API.swift in Sources */,
 				3EBE678A2170C28100DB2709 /* AppDelegate.swift in Sources */,
 				3EBE67C5217126BA00DB2709 /* Presentable.swift in Sources */,
+				3EBE67EE2171607200DB2709 /* ViewControllerExtension.swift in Sources */,
 				3EBE67E02171338500DB2709 /* MoviesUpcomingViewController.swift in Sources */,
+				3EBE67F02171615800DB2709 /* UIScreenExtension.swift in Sources */,
 				3EBE67B22170D48200DB2709 /* APIResponse.swift in Sources */,
 				3EBE67E721713A6000DB2709 /* MoviesUpcomingCoordinator.swift in Sources */,
 			);
@@ -564,7 +673,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -619,7 +728,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -667,9 +776,9 @@
 		};
 		3EBE67A72170C28200DB2709 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7EE58DF9AB8656BBAE3B677 /* Pods-CineKobeTests.debug.xcconfig */;
+			baseConfigurationReference = 50C5C042E3B68A2B1EFDE7E1 /* Pods-CineKobe-CineKobeTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CineKobeTests/Info.plist;
@@ -688,9 +797,9 @@
 		};
 		3EBE67A82170C28200DB2709 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28D5A53F6ABBB738DAB5048C /* Pods-CineKobeTests.release.xcconfig */;
+			baseConfigurationReference = 6C5EA585352E52258FD3A23B /* Pods-CineKobe-CineKobeTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CineKobeTests/Info.plist;
