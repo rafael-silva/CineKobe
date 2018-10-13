@@ -22,7 +22,7 @@ class MoviesUpcomingViewController: UIViewController {
         super.viewDidLoad()
         
         // Uncomment this only after have implemented the presenter with 100% of CodeCoverage
-        // presenter.attachView(view: self)
+         presenter.attachView(view: self)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -31,5 +31,12 @@ class MoviesUpcomingViewController: UIViewController {
     }
 }
 
-// Uncomment this only after have implemented the presenter with 100% of CodeCoverage
-// extension MoviesUpcomingViewController: MoviesUpcomingView { }
+extension MoviesUpcomingViewController: MoviesUpcomingView {
+    func setList(with moviesUpcoming: MoviesUpcoming) {
+        //TODOs:
+    }
+    
+    func showError(with message: String) {
+         //TODOs:
+    }
+}

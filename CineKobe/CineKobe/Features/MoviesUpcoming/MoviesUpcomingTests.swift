@@ -1,23 +1,24 @@
 import Quick
 import Nimble
-// FIXME: Change Target Membership to AgipagTests❗️
-@testable import Agipag
 
-// swiftlint:disable function_body_length
+@testable import CineKobe
+
 class MoviesUpcomingTests: QuickSpec {
     
     override func spec() {
- 
+        
         var view: MoviesUpcomingViewSpy!
         var delegate: MoviesUpcomingDelegateSpy!
-        var presenter: MoviesUpcomingPresenter! 
+        var service: Service!
+        var presenter: MoviesUpcomingPresenter!
         
         describe("MoviesUpcomingPresenter") {
             
             beforeEach {
                 view = MoviesUpcomingViewSpy()
                 delegate = MoviesUpcomingDelegateSpy()
-                presenter = MoviesUpcomingPresenter(delegate: delegate)
+                service = ServiceImp()
+                presenter = MoviesUpcomingPresenter(delegate: delegate, service: service)
             }
             
             describe("quando a view for anexada") {
@@ -31,6 +32,16 @@ class MoviesUpcomingTests: QuickSpec {
     }
 }
 
-private class MoviesUpcomingViewSpy: MoviesUpcomingView {}
+private class MoviesUpcomingViewSpy: MoviesUpcomingView {
+    func setList(with moviesUpcoming: MoviesUpcoming) {
+    }
+    
+    func showError(with message: String) {
+    }
+}
 
-private class MoviesUpcomingDelegateSpy: MoviesUpcomingDelegate {}
+private class MoviesUpcomingDelegateSpy: MoviesUpcomingDelegate {
+    func moviesUpComingSelected(movie: MoviesUpcoming.Movie) {
+    }
+}
+

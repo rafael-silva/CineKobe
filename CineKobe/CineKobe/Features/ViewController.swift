@@ -13,14 +13,14 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        let service = Service()
-        service.fetchMoviesUpcoming(with: 1)
+//        let service = Service()
+        //service.fetchMoviesUpcoming(with: 1)
     }
 }
 
-extension ViewController: ServiceOutput {
-    func serviceSucceeded(with moviesUpcoming: MoviesUpcoming) {}
-    
-    func serviceError(with message: String) {}
-}
+//extension ViewController: ServiceOutput {
+//    func serviceSucceeded(with moviesUpcoming: MoviesUpcoming) {}
+//
+//    func serviceError(with message: String) {}
+//}
 

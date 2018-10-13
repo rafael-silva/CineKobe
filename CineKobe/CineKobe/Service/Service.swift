@@ -1,21 +1,26 @@
 import Foundation
 
-protocol ServiceDataSource: class {
+protocol MoviesUpcomingServiceOutput: class {
+    func serviceSucceeded(with moviesUpcoming: MoviesUpcoming)
+    func serviceError(with message: String)
+}
+
+protocol Service: class {
+    var serviceOutput: MoviesUpcomingServiceOutput? {get set}
     func fetchMoviesUpcoming(with page: Int)
 }
 
-public class Service: ServiceDataSource {
+public class ServiceImp: Service {
     
-    weak var serviceOutput: ServiceOutput?
+    weak var serviceOutput: MoviesUpcomingServiceOutput?
     
     func fetchMoviesUpcoming(with page: Int) {
         DataManager.getMoviesUpcoming(with: page) { [weak self] output, error  in
-            guard let `self` =  self else { return }
             guard let output = output else {
-                self.serviceOutput?.serviceError(with: error ?? "")
+                self?.serviceOutput?.serviceError(with: error ?? "")
                 return
             }
-            self.serviceOutput?.serviceSucceeded(with: output)
+            self?.serviceOutput?.serviceSucceeded(with: output)
         }
     }
 }

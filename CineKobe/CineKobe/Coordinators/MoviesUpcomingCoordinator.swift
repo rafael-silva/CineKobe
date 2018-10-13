@@ -20,4 +20,8 @@ final class MoviesUpcomingCoordinator: BaseCoordinator {
     }
 }
 
-extension MoviesUpcomingCoordinator: MoviesUpcomingDelegate {}
+extension MoviesUpcomingCoordinator: MoviesUpcomingDelegate {
+    func moviesUpComingSelected(movie: MoviesUpcoming.Movie) {
+        //TODOs:
+    }
+}

@@ -2,9 +2,9 @@ import UIKit
 
 final class ModuleFactoryImp: MoviesUpcomingFactory {
     func makeMoviesUpComingOutput(delegate: MoviesUpcomingDelegate) -> UIViewController {
-        let service = Service()
+        let service = ServiceImp()
         let presenter = MoviesUpcomingPresenter(delegate: delegate, service: service)
-        //service.serviceOutput = presenter
+        service.serviceOutput = presenter
         return MoviesUpcomingViewController(presenter: presenter)
     }
 }

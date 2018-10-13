@@ -6,12 +6,7 @@ protocol MoviesUpcomingView: class {
 }
 
 protocol MoviesUpcomingDelegate: class {
-    // Delegate methods
-}
-
-protocol MoviesUpcomingServiceOutput: class {
-    func serviceSucceeded(with moviesUpcoming: MoviesUpcoming)
-    func serviceError(with message: String)
+    func moviesUpComingSelected(movie: MoviesUpcoming.Movie)
 }
 
 class MoviesUpcomingPresenter {
@@ -33,15 +28,23 @@ class MoviesUpcomingPresenter {
     
     func attachView(view: MoviesUpcomingView) {
         self.view = view
+        loadData()
+    }
+    
+    func loadData(with page: Int = 1) {
+        service.fetchMoviesUpcoming(with: page)
     }
     
 }
 
-extension MoviesUpcomingPresenter: MoviesUpcomingServiceOutput {
+// MARK: - Service Protocol
+
+extension MoviesUpcomingPresenter:  MoviesUpcomingServiceOutput {
     func serviceSucceeded(with moviesUpcoming: MoviesUpcoming) {
-        view?.setList(with: moviesUpcoming)
+          //TODOs:
     }
     
-    func serviceError(with message: String) {  }
-    
+    func serviceError(with message: String) {
+          //TODOs:
+    }
 }
