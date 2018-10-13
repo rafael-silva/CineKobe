@@ -31,7 +31,7 @@ class MovieDetailPresenter {
     }
     
     func setup() {
-        guard let title = movie.title, let overview =  movie.overview, let releaseDate = movie.release_date  else { return }
+        guard let title = movie.title, let overview =  movie.overview else { return }
         view?.setBackgroundImage(with: movie.url)
         view?.setBackgroundHeaderImage(with:movie.url)
         view?.setIlustration(with: movie.url)
