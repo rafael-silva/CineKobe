@@ -36,12 +36,19 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 2 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 3 nibs.
   struct nib {
+    /// Nib `MovieTableViewCell`.
+    static let movieTableViewCell = _R.nib._MovieTableViewCell()
     /// Nib `MoviesUpcomingViewController_SE`.
     static let moviesUpcomingViewController_SE = _R.nib._MoviesUpcomingViewController_SE()
     /// Nib `MoviesUpcomingViewController`.
     static let moviesUpcomingViewController = _R.nib._MoviesUpcomingViewController()
+    
+    /// `UINib(name: "MovieTableViewCell", in: bundle)`
+    static func movieTableViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.movieTableViewCell)
+    }
     
     /// `UINib(name: "MoviesUpcomingViewController", in: bundle)`
     static func moviesUpcomingViewController(_: Void = ()) -> UIKit.UINib {
@@ -56,8 +63,11 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 0 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
   struct reuseIdentifier {
+    /// Reuse identifier `movieCell`.
+    static let movieCell: Rswift.ReuseIdentifier<MovieTableViewCell> = Rswift.ReuseIdentifier(identifier: "movieCell")
+    
     fileprivate init() {}
   }
   
@@ -111,6 +121,20 @@ struct R: Rswift.Validatable {
 
 struct _R {
   struct nib {
+    struct _MovieTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = MovieTableViewCell
+      
+      let bundle = R.hostingBundle
+      let identifier = "movieCell"
+      let name = "MovieTableViewCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> MovieTableViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MovieTableViewCell
+      }
+      
+      fileprivate init() {}
+    }
+    
     struct _MoviesUpcomingViewController: Rswift.NibResourceType {
       let bundle = R.hostingBundle
       let name = "MoviesUpcomingViewController"

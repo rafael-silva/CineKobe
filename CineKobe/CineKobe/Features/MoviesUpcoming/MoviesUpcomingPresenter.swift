@@ -16,6 +16,7 @@ class MoviesUpcomingPresenter {
     private weak var view: MoviesUpcomingView?
     private unowned var delegate: MoviesUpcomingDelegate
     private let service: Service
+    private var movie: MoviesUpcoming.Movie?
     
     // MARK: Initialization
     
@@ -35,16 +36,19 @@ class MoviesUpcomingPresenter {
         service.fetchMoviesUpcoming(with: page)
     }
     
+    func movieDidSelected(movie: MoviesUpcoming.Movie) {
+        delegate.moviesUpComingSelected(movie: movie)
+    }
 }
 
 // MARK: - Service Protocol
 
 extension MoviesUpcomingPresenter:  MoviesUpcomingServiceOutput {
     func serviceSucceeded(with moviesUpcoming: MoviesUpcoming) {
-          //TODOs:
+        view?.setList(with: moviesUpcoming)
     }
     
     func serviceError(with message: String) {
-          //TODOs:
+        view?.showError(with: "Message")
     }
 }

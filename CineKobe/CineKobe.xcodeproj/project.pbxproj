@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E968BB1217226E900D4F1A9 /* MoviesUpcomingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E968BA121721C3C00D4F1A9 /* MoviesUpcomingTests.swift */; };
+		3E968BB22172274D00D4F1A9 /* MoviesUpcomingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E968BA121721C3C00D4F1A9 /* MoviesUpcomingTests.swift */; };
+		3E968BBF217243AA00D4F1A9 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E968BBD217243AA00D4F1A9 /* MovieTableViewCell.swift */; };
+		3E968BC0217243AA00D4F1A9 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E968BBE217243AA00D4F1A9 /* MovieTableViewCell.xib */; };
+		3E968BC221724E3C00D4F1A9 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E968BC121724E3B00D4F1A9 /* R.generated.swift */; };
+		3E968BC42172535500D4F1A9 /* OptionalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E968BC32172535500D4F1A9 /* OptionalExtension.swift */; };
 		3EBE678A2170C28100DB2709 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67892170C28100DB2709 /* AppDelegate.swift */; };
 		3EBE678C2170C28100DB2709 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE678B2170C28100DB2709 /* ViewController.swift */; };
 		3EBE678F2170C28100DB2709 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EBE678D2170C28100DB2709 /* Main.storyboard */; };
@@ -35,11 +39,9 @@
 		3EBE67E22171338500DB2709 /* MoviesUpcomingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EBE67DB2171338500DB2709 /* MoviesUpcomingViewController.xib */; };
 		3EBE67E52171352100DB2709 /* ModuloFactoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67E42171352100DB2709 /* ModuloFactoryImp.swift */; };
 		3EBE67E721713A6000DB2709 /* MoviesUpcomingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67E621713A6000DB2709 /* MoviesUpcomingCoordinator.swift */; };
-		3EBE67EB21715E8F00DB2709 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67EA21715E8F00DB2709 /* R.generated.swift */; };
 		3EBE67EE2171607200DB2709 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67ED2171607200DB2709 /* ViewControllerExtension.swift */; };
 		3EBE67F02171615800DB2709 /* UIScreenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE67EF2171615800DB2709 /* UIScreenExtension.swift */; };
 		82C794D71A8678825FBDCA5B /* Pods_CineKobe_CineKobeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC47CE2F23FD14EF36D94E14 /* Pods_CineKobe_CineKobeTests.framework */; };
-		B9E674305ABBA6FB734B987B /* libPods-CineKobeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 919FBD1CC92C67BD1CB43AD5 /* libPods-CineKobeTests.a */; };
 		E28AE06BB3F303000AB157C6 /* Pods_CineKobe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99AD883804300C45920D156B /* Pods_CineKobe.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,8 +58,10 @@
 /* Begin PBXFileReference section */
 		28D5A53F6ABBB738DAB5048C /* Pods-CineKobeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineKobeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CineKobeTests/Pods-CineKobeTests.release.xcconfig"; sourceTree = "<group>"; };
 		3E968BA121721C3C00D4F1A9 /* MoviesUpcomingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUpcomingTests.swift; sourceTree = "<group>"; };
-		3E968BA92172245100D4F1A9 /* CineKobeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CineKobeTest.swift; sourceTree = "<group>"; };
-		3E968BAB2172245100D4F1A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E968BBD217243AA00D4F1A9 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		3E968BBE217243AA00D4F1A9 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
+		3E968BC121724E3B00D4F1A9 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		3E968BC32172535500D4F1A9 /* OptionalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtension.swift; sourceTree = "<group>"; };
 		3EBE67862170C28100DB2709 /* CineKobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CineKobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EBE67892170C28100DB2709 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EBE678B2170C28100DB2709 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,7 +93,6 @@
 		3EBE67DB2171338500DB2709 /* MoviesUpcomingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviesUpcomingViewController.xib; sourceTree = "<group>"; };
 		3EBE67E42171352100DB2709 /* ModuloFactoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuloFactoryImp.swift; sourceTree = "<group>"; };
 		3EBE67E621713A6000DB2709 /* MoviesUpcomingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUpcomingCoordinator.swift; sourceTree = "<group>"; };
-		3EBE67EA21715E8F00DB2709 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = CineKobe/General/R.generated.swift; sourceTree = SOURCE_ROOT; };
 		3EBE67ED2171607200DB2709 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		3EBE67EF2171615800DB2709 /* UIScreenExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreenExtension.swift; sourceTree = "<group>"; };
 		49B2DC1C7B267750FFB58A96 /* Pods-CineKobe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineKobe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CineKobe/Pods-CineKobe.debug.xcconfig"; sourceTree = "<group>"; };
@@ -115,7 +118,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9E674305ABBA6FB734B987B /* libPods-CineKobeTests.a in Frameworks */,
 				82C794D71A8678825FBDCA5B /* Pods_CineKobe_CineKobeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,13 +138,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		3E968BA82172245100D4F1A9 /* CineKobeTest */ = {
+		3E968BBA2172437500D4F1A9 /* Custom Cell */ = {
 			isa = PBXGroup;
 			children = (
-				3E968BA92172245100D4F1A9 /* CineKobeTest.swift */,
-				3E968BAB2172245100D4F1A9 /* Info.plist */,
+				3E968BBD217243AA00D4F1A9 /* MovieTableViewCell.swift */,
+				3E968BBE217243AA00D4F1A9 /* MovieTableViewCell.xib */,
 			);
-			path = CineKobeTest;
+			path = "Custom Cell";
 			sourceTree = "<group>";
 		};
 		3EBE677D2170C28100DB2709 = {
@@ -150,7 +152,6 @@
 			children = (
 				3EBE67882170C28100DB2709 /* CineKobe */,
 				3EBE679D2170C28200DB2709 /* CineKobeTests */,
-				3E968BA82172245100D4F1A9 /* CineKobeTest */,
 				3EBE67872170C28100DB2709 /* Products */,
 				00BCF35CD44D182F94372CA8 /* Pods */,
 				83CF8EF9B908A0D9EE0D52D5 /* Frameworks */,
@@ -222,7 +223,7 @@
 		3EBE67B921711AD300DB2709 /* General */ = {
 			isa = PBXGroup;
 			children = (
-				3EBE67EA21715E8F00DB2709 /* R.generated.swift */,
+				3E968BC121724E3B00D4F1A9 /* R.generated.swift */,
 				3EBE678D2170C28100DB2709 /* Main.storyboard */,
 				3EBE67902170C28200DB2709 /* Assets.xcassets */,
 				3EBE67922170C28200DB2709 /* LaunchScreen.storyboard */,
@@ -306,6 +307,7 @@
 		3EBE67D42171332D00DB2709 /* MoviesUpcoming */ = {
 			isa = PBXGroup;
 			children = (
+				3E968BBA2172437500D4F1A9 /* Custom Cell */,
 				3EBE67D52171338500DB2709 /* MoviesUpcoming.strings */,
 				3E968BA121721C3C00D4F1A9 /* MoviesUpcomingTests.swift */,
 				3EBE67D72171338500DB2709 /* MoviesUpcomingPresenter.swift */,
@@ -321,6 +323,7 @@
 			children = (
 				3EBE67ED2171607200DB2709 /* ViewControllerExtension.swift */,
 				3EBE67EF2171615800DB2709 /* UIScreenExtension.swift */,
+				3E968BC32172535500D4F1A9 /* OptionalExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EBE67942170C28200DB2709 /* LaunchScreen.storyboard in Resources */,
+				3E968BC0217243AA00D4F1A9 /* MovieTableViewCell.xib in Resources */,
 				3EBE67912170C28200DB2709 /* Assets.xcassets in Resources */,
 				3EBE67DD2171338500DB2709 /* MoviesUpcomingViewController_SE.xib in Resources */,
 				3EBE678F2170C28100DB2709 /* Main.storyboard in Resources */,
@@ -571,19 +575,20 @@
 			files = (
 				3EBE67E52171352100DB2709 /* ModuloFactoryImp.swift in Sources */,
 				3EBE678C2170C28100DB2709 /* ViewController.swift in Sources */,
+				3E968BC221724E3C00D4F1A9 /* R.generated.swift in Sources */,
 				3EBE67AE2170D40500DB2709 /* DataManager.swift in Sources */,
 				3EBE67CB217127A500DB2709 /* Coordinator.swift in Sources */,
-				3E968BB1217226E900D4F1A9 /* MoviesUpcomingTests.swift in Sources */,
 				3EBE67D32171328E00DB2709 /* MoviesUpcomingFactory.swift in Sources */,
 				3EBE67B02170D46C00DB2709 /* Service.swift in Sources */,
 				3EBE67DE2171338500DB2709 /* MoviesUpcomingPresenter.swift in Sources */,
 				3EBE67CF217131FE00DB2709 /* CoordinatorFactoryImp.swift in Sources */,
-				3EBE67EB21715E8F00DB2709 /* R.generated.swift in Sources */,
 				3EBE67C3217125B700DB2709 /* RouterImp.swift in Sources */,
 				3EBE67B52170D6D900DB2709 /* MoviesUpcoming.swift in Sources */,
 				3EBE67C1217124E500DB2709 /* Router.swift in Sources */,
 				3EBE67BD2171243B00DB2709 /* AppCoordinator.swift in Sources */,
 				3EBE67D12171321D00DB2709 /* CoordinatorFactory.swift in Sources */,
+				3E968BBF217243AA00D4F1A9 /* MovieTableViewCell.swift in Sources */,
+				3E968BC42172535500D4F1A9 /* OptionalExtension.swift in Sources */,
 				3EBE67C92171278100DB2709 /* BaseCoordinator.swift in Sources */,
 				3EBE67AC2170CE1200DB2709 /* API.swift in Sources */,
 				3EBE678A2170C28100DB2709 /* AppDelegate.swift in Sources */,
@@ -600,6 +605,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E968BB22172274D00D4F1A9 /* MoviesUpcomingTests.swift in Sources */,
 				3EBE679F2170C28200DB2709 /* CineKobeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -743,6 +749,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -802,7 +809,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.silva.rafael.CineKobeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CineKobe.app/CineKobe";
 			};
@@ -824,7 +831,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.silva.rafael.CineKobeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CineKobe.app/CineKobe";
 			};

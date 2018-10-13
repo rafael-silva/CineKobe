@@ -11,5 +11,9 @@ extension MoviesUpcoming {
         let title: String?
         let release_date: String?
         let poster_path: String?
+        
+        var url: URL {
+            return URL(string: "" + "." + poster_path.unwrapped)!
+        }
     }
 }
