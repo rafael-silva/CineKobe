@@ -35,7 +35,7 @@
                     </view>
                     <blurEffect style="dark"/>
                 </visualEffectView>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9T-Of-6lu">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9T-Of-6lu">
                     <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="51H-pl-iUw" userLabel="backgroundImageHeader">
@@ -110,7 +110,7 @@
                 <constraint firstItem="a9T-Of-6lu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7ru-bY-GFf"/>
                 <constraint firstItem="Y4F-TR-BvQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Cfp-Sl-xtl"/>
                 <constraint firstAttribute="bottom" secondItem="a9T-Of-6lu" secondAttribute="bottom" id="GxE-p4-fD0"/>
-                <constraint firstAttribute="trailing" secondItem="uyb-aY-e8t" secondAttribute="trailing" constant="254" id="PHo-LP-ReI"/>
+                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="uyb-aY-e8t" secondAttribute="trailing" constant="254" id="PHo-LP-ReI"/>
                 <constraint firstItem="a9T-Of-6lu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="PTk-Ii-T6g"/>
                 <constraint firstItem="2DF-YD-DFb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="21" id="SnZ-3m-fxX"/>
                 <constraint firstItem="uyb-aY-e8t" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="cYX-mb-4RY"/>
