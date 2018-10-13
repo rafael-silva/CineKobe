@@ -4,13 +4,19 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    private var navigationController: UINavigationController?
     
+    private var custonNavigationController: UINavigationController {
+        let navigationController = UINavigationController()
+        navigationController.navigationBar.barTintColor = UIColor.black
+        navigationController.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        navigationController.navigationBar.tintColor = UIColor.white
+        navigationController.navigationBar.shadowImage = UIImage()
+        return navigationController
+    }
     var rootController: UINavigationController {
-        navigationController = UINavigationController()
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.makeKeyAndVisible()
-        window?.rootViewController = navigationController
+        window?.rootViewController = custonNavigationController
         
         return self.window!.rootViewController as! UINavigationController
     }

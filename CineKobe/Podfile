@@ -8,6 +8,7 @@ target 'CineKobe' do
     
     pod 'Moya', '~> 11.0'
     pod 'R.swift', '~> 3.3.0'
+    pod 'Kingfisher'
     
     target 'CineKobeTests' do
         inherit! :complete

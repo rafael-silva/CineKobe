@@ -2,12 +2,15 @@ import UIKit
 
 protocol MoviesUpcomingView: class {
     func setList(with moviesUpcoming: MoviesUpcoming)
-    func showError(with message: String)
+    func showError(with message: String, title: String)
 }
 
 protocol MoviesUpcomingDelegate: class {
     func moviesUpComingSelected(movie: MoviesUpcoming.Movie)
 }
+
+
+private let strings = R.string.moviesUpcoming.self
 
 class MoviesUpcomingPresenter {
     
@@ -33,7 +36,11 @@ class MoviesUpcomingPresenter {
     }
     
     func loadData(with page: Int = 1) {
-        service.fetchMoviesUpcoming(with: page)
+        if page > 1 {
+            service.fetchMoviesUpcoming(with: page)
+        } else {
+            service.fetchMoviesUpcoming(with: page)
+        }
     }
     
     func movieDidSelected(movie: MoviesUpcoming.Movie) {
@@ -49,6 +56,6 @@ extension MoviesUpcomingPresenter:  MoviesUpcomingServiceOutput {
     }
     
     func serviceError(with message: String) {
-        view?.showError(with: "Message")
+        view?.showError(with: strings.errorX(message), title: strings.errorTitle())
     }
 }

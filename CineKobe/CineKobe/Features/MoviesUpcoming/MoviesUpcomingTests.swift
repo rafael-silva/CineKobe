@@ -5,8 +5,8 @@ import Nimble
 
 let mockMoviesUpcoming = MoviesUpcoming(page: 1,
                                          total_pages: 15,
-                                         results:  [MoviesUpcoming.Movie(title: "test", release_date: "11/02/1990", poster_path: nil),
-                                                    MoviesUpcoming.Movie(title: "test2", release_date: "11/02/1980", poster_path: nil)]
+                                         results:  [MoviesUpcoming.Movie(title: "test", release_date: "11/02/1990", poster_path: nil, overview: nil),
+                                                    MoviesUpcoming.Movie(title: "test2", release_date: "11/02/1980", poster_path: nil, overview: nil)]
 )
 
 class MoviesUpcomingTests: QuickSpec {
@@ -86,7 +86,6 @@ class MoviesUpcomingTests: QuickSpec {
 }
 
 private class MoviesUpcomingViewSpy: MoviesUpcomingView {
-    
     var setListCalled: Bool?
     var showErrorCalled: Bool?
     
@@ -94,9 +93,10 @@ private class MoviesUpcomingViewSpy: MoviesUpcomingView {
         setListCalled = true
     }
     
-    func showError(with message: String) {
+    func showError(with message: String, title: String) {
         showErrorCalled = true
     }
+    
 }
 
 private class MoviesUpcomingDelegateSpy: MoviesUpcomingDelegate {

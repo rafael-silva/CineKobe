@@ -18,10 +18,16 @@ final class MoviesUpcomingCoordinator: BaseCoordinator {
         let moviesUpcomingOutput = factory.makeMoviesUpComingOutput(delegate: self)
         router.setRootModule(moviesUpcomingOutput)
     }
+    
+    private func showMovieDetail(_ movie: MoviesUpcoming.Movie) {
+        let movieDetailOutput =  factory.makeMovieDetailUpComingOutput(movie: movie)
+        router.push(movieDetailOutput)
+
+    }
 }
 
 extension MoviesUpcomingCoordinator: MoviesUpcomingDelegate {
     func moviesUpComingSelected(movie: MoviesUpcoming.Movie) {
-        //TODOs:
+        showMovieDetail(movie)
     }
 }
