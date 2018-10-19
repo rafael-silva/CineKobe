@@ -1,0 +1,38 @@
+platform :ios, '9.0'
+
+target 'CineKobe' do
+    use_frameworks!
+    inhibit_all_warnings!
+    
+    pod 'Moya', '~> 11.0'
+    pod 'R.swift', '~> 3.3.0'
+    pod 'Kingfisher'
+    
+    target 'CineKobeTests' do
+        inherit! :complete
+        pod 'Nimble', '~> 7.0.1'
+        pod 'Quick', '~> 1.0.0'
+    end
+end
+
+# Disable Code Coverage for Pods projects except MyPod
+post_install do |installer_representation|
+    installer_representation.pods_project.targets.each do |target|
+        
+        if target.name == 'Moya'
+            target.build_configurations.each do |config|
+                config.build_settings['CLANG_ENABLE_CODE_COVERAGE'] = 'YES'
+                config.build_settings['SWIFT_VERSION'] = '4.0'
+            end
+            elsif target.name == 'Kingfisher'
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '4.2'
+            end
+            else
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '3.0'
+            end
+        end
+    end
+end
+
