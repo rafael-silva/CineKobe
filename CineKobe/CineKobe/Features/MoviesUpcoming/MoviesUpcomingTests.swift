@@ -4,10 +4,9 @@ import Nimble
 @testable import CineKobe
 
 let mockMoviesUpcoming = MoviesUpcoming(page: 1,
-                                         total_pages: 15,
-                                         results:  [MoviesUpcoming.Movie(title: "test", release_date: "11/02/1990", poster_path: nil, overview: nil),
-                                                    MoviesUpcoming.Movie(title: "test2", release_date: "11/02/1980", poster_path: nil, overview: nil)]
-)
+                                        total_pages: 15,
+                                        results: [MoviesUpcoming.Movie(title: "test", release_date: "11/02/1990", poster_path: nil, overview: nil),
+                                                    MoviesUpcoming.Movie(title: "test2", release_date: "11/02/1980", poster_path: nil, overview: nil)])
 
 class MoviesUpcomingTests: QuickSpec {
     
@@ -37,6 +36,7 @@ class MoviesUpcomingTests: QuickSpec {
                     service.serviceOutput?.serviceSucceeded(with: mockMoviesUpcoming)
                 }
                 
+                
                 it("it should load list") {
                     expect(view.setListCalled) == true
                 }
@@ -55,28 +55,25 @@ class MoviesUpcomingTests: QuickSpec {
                     setup()
                 }
                 
-                describe("when a requisition movies have successful") {
+                describe("when a requisition movies return successful") {
                     
                     beforeEach {
                         service.serviceOutput?.serviceSucceeded(with: mockMoviesUpcoming)
                     }
                     
-                    it("então não deverá requisitar a lista de filmes atuais") {
+                    it("then request movies") {
                         expect(service.fetchMoviesUpcomingCalled).to(beTrue())
                     }
                     
-                    it("então deverá anexar anexar") {
+                    it("then set movies list") {
                         expect(view?.setListCalled).to(beTrue())
                     }
                 }
                 
-                describe("quando busca por localização do usuário retornar com erro") {
+                describe("when a requisition movies return error") {
                     
-                    beforeEach {
+                    it("then remove show error") {
                         service.serviceOutput?.serviceError(with: "error")
-                    }
-                    
-                    it("então deverá remover spinner") {
                         expect(view?.showErrorCalled) == true
                     }
                 }

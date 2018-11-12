@@ -5,7 +5,7 @@ protocol MovieDetailView: class {
     func setBackgroundHeaderImage(with imageURL: URL)
     func setIlustration(with imageURL: URL)
     func setTitle(_ text: String)
-    func setOverview(_  text: String, overview: String)
+    func setOverview(_ text: String, overview: String)
 }
 
 private let strings = R.string.movieDetail.self
