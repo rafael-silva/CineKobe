@@ -36,11 +36,7 @@ class MoviesUpcomingPresenter {
     }
     
     func loadData(with page: Int = 1) {
-        if page > 1 {
-            service.fetchMoviesUpcoming(with: page)
-        } else {
-            service.fetchMoviesUpcoming(with: page)
-        }
+        service.fetchMoviesUpcoming(with: page)
     }
     
     func movieDidSelected(movie: MoviesUpcoming.Movie) {
